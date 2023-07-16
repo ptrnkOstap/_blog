@@ -9,4 +9,10 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends Model
 {
     use HasFactory, HasUlids;
+
+    protected $table='articles';
+
+    protected $hidden=[
+        'id',
+    ];
 }
